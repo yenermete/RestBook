@@ -9,5 +9,7 @@ The proejct is about a simple database where there is just one table, namely RES
 /services/rest/books/get/book/1
 /services/rest/books/insert/book with the following json {"title":"Dune", "publishDate":652191558923, "isbn10":"0441172717", "isbn13":"978-0441172719"}
 
-I used Jodatime for date fields just to show the capabilities of Jackson with its JodaModule. There are some parts which can be changed according to the needs. This is just a starter.
+I tried Spring's JDBCTemplate in this project for transaction handling. While it's a great extension for JDBC, I would still use the way I did in the movies project for all database access.
+
+I used JodaTime for date fields just to show the capabilities of Jackson with its JodaModule. There are some parts which can be changed according to the needs. This is just a starter.
 
