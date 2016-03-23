@@ -17,7 +17,7 @@ public class BookServiceImpl implements BookService {
 	
 	@Override
 	public void insertBook(Book book) {
-		baseDao.executeUpdate(Queries.INSERT_BOOK_PREFIX + getJson(book) + "')");	
+		baseDao.executeUpdate(Queries.INSERT_BOOK_PREFIX + getJson(book) + Queries.INSERT_BOOK_SUFFIX);
 	}
 
 	@Override
